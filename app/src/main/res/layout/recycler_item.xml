@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        tools:src="@drawable/ic_baseline_folder_24"
+        android:id="@+id/iconView" />
+    <TextView
+        android:id="@+id/textNameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Документы"
+        android:padding="10dp"
+        android:textColor="@color/black"
+
+        android:layout_toEndOf="@+id/iconView"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/textNameView"
+        />
+
+</RelativeLayout>
